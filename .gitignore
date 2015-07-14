@@ -1,5 +1,12 @@
+.idea
+.env
+
+composer.lock
+
+Homestead.yaml
+
 /vendor
 /node_modules
-Homestead.yaml
-.env
-composer.lock
+/public/js/libs.*
+/public/css/libs.*
+*.map

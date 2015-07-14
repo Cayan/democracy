@@ -1,2 +1,9 @@
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+.md-toolbar-tools {
+    h1 {
+        font-size: inherit;
+        font-weight: inherit;
+        margin: inherit;
+    }
+}

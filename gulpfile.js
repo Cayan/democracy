@@ -12,5 +12,24 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass('app.scss');
+    mix
+        .sass('app.scss')
+        .scripts(
+            [
+                'node_modules/angular/angular.js',
+                'node_modules/angular-animate/angular-animate.js',
+                'node_modules/angular-touch/angular-touch.js',
+                'node_modules/angular-aria/angular-aria.js',
+                'node_modules/angular-material/angular-material.js'
+            ],
+            'public/js/libs.js',
+            './'
+        )
+        .styles(
+            [
+                'node_modules/angular-material/angular-material.css'
+            ],
+            'public/css/libs.css',
+            './'
+        );
 });

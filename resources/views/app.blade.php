@@ -2,8 +2,7 @@
 <html lang="en" ng-app='democracy'>
     <head>
         <title>Democracy</title>
-        <link href="{{ asset('/css/libs/angular-csp.css') }}" rel="stylesheet" type="text/css">
-        <link href="{{ asset('/css/libs/angular-material.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('/css/libs.css') }}" rel="stylesheet" type="text/css">
         <link href="{{ asset('/css/app.css') }}" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
         <meta name="viewport" content="initial-scale=1" />
@@ -23,14 +22,18 @@
             </md-sidenav>
             <div layout="column" flex id="content">
                 <md-content layout="column" flex class="md-padding">
-                
+                    <div layout="row">
+                        <div>I'm left.</div>
+                        <div>I'm right.</div>
+                    </div>
+                    <div layout="column">
+                        <div>I'm above.</div>
+                        <div>I'm below.</div>
+                    </div>
                 </md-content>
             </div>
         </div>
-        <script src="{{ asset('/js/libs/angular.js') }}"></script>
-        <script src="{{ asset('/js/libs/angular-animate.js') }}"></script>
-        <script src="{{ asset('/js/libs/angular-aria.js') }}"></script>
-        <script src="{{ asset('/js/libs/angular-material.js') }}"></script>
+        <script src="{{ asset('/js/libs.js') }}"></script>
         <script src="{{ asset('/js/main.js') }}"></script>
     </body>
 </html>
